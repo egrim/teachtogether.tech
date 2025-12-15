@@ -253,10 +253,10 @@ how to find the total length of a list of words:
 
 \begin{minted}{text}
 # total_length(["red", "green", "blue"]) => 12
-define total_length(list_of_words):
+def total_length(list_of_words):
     total = 0
     for word in list_of_words:
-        total = total + length(word)
+        total = total + len(word)
     return total
 \end{minted}
 
@@ -266,10 +266,10 @@ and then ask them to fill in the blanks in this
 
 \begin{minted}{text}
 # word_lengths(["red", "green", "blue"]) => [3, 5, 4]
-define word_lengths(list_of_words):
+def word_lengths(list_of_words):
     list_of_lengths = []
     for ____ in ____:
-        append(list_of_lengths, ____)
+        list_of_lengths.append(____)
     return list_of_lengths
 \end{minted}
 
@@ -278,7 +278,7 @@ The next problem might be this
 
 \begin{minted}{text}
 # join_all(["red", "green", "blue"]) => "redgreenblue"
-define join_all(list_of_words):
+def join_all(list_of_words):
     joined_words = ____
     for ____ in ____:
         ____
@@ -289,7 +289,7 @@ Learners would finally be asked to write an entire function on their own:
 
 \begin{minted}{text}
 # make_acronym(["red", "green", "blue"]) => "RGB"
-define make_acronym(list_of_words):
+def make_acronym(list_of_words):
     ____
 \end{minted}
 

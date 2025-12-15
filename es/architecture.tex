@@ -248,10 +248,10 @@ cómo encontrar la longitud total de una lista de palabras:
 
 \begin{minted}{text}
 # largo_total(["rojo", "verde", "azul"]) => 12
-define largo_total(lista_de_palabras):
+def largo_total(lista_de_palabras):
     total = 0
     for palabra in lista_de_palabras:
-        total = total + length(palabra)
+        total = total + len(palabra)
     return total
 \end{minted}
 
@@ -263,10 +263,10 @@ y luego pidiendo que llenen los espacios en blanco en este otro código
 
 \begin{minted}{text}
 # largo_palabra(["rojo", "verde", "azul"]) => [3, 5, 4]
-define largo_palabra(lista_de_palabras):
+def largo_palabra(lista_de_palabras):
     lista_de_longitudes = []
     for ____ in ____:
-        append(lista_de_longitudes, ____)
+        lista_de_longitudes.append(____)
     return lista_de_longitudes
 \end{minted}
 
@@ -275,7 +275,7 @@ El siguiente problema podría ser este
 
 \begin{minted}{text}
 # juntar_todo(["rojo", "verde", "azul"]) => "rojoverdeazul"
-define juntar_todo(lista_de_palabras):
+def juntar_todo(lista_de_palabras):
     palabras_unidas = ____
     for ____ in ____:
         ____
@@ -286,7 +286,7 @@ Finalmente, los/las estudiantes tendrán que escribir una función completa por 
 
 \begin{minted}{text}
 # generar_acronimo(["rojo", "verde", "azul"]) => "RVA"
-define generar_acronimo(lista_de_palabras):
+def generar_acronimo(lista_de_palabras):
     ____
 \end{minted}
 
